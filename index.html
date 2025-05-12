@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>NTWIST</h2>
+      <nav>
+        <a style="color: blue;" href="index.html">Form</a>
+        <a style="color: blue;" href="sort.html">Sortable List</a>
+        <a style="color: blue;" href="faq.html">FAQ</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <p id="timeSpent"></p>
+        <button type="submit">Submit</button>
+        <p class="success-message" id="confirmation" hidden>Thank you! Your message has been sent.</p>
+      </form>
+    </main>
+  </div>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
